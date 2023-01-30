@@ -1,0 +1,166 @@
+* {
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+}
+
+html {
+   font-size: 62.5%;
+   overflow-x: hidden;
+   scroll-behavior: smooth;
+}
+
+body {
+   font-family: "Roboto", sans-serif;
+   line-height: 1;
+   font-weight: 400;
+   color: #555;
+
+   /* Only works if there is nothing absolutely positioned in relation to body */
+   overflow: hidden;
+}
+
+ul {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+
+a {
+   text-decoration: none;
+}
+
+.secondary-heading {
+   font-size: 44px;
+   font-weight: 900;
+   color: #0e1133;
+}
+
+.sub-heading {
+   font-size: 18px;
+   font-weight: 400;
+   color: #505056;
+   margin-top: 11px;
+   line-height: 1.4;
+}
+
+/* Helper-class */
+.get-started-link:link,
+.get-started-link:visited {
+   display: inline-block;
+   background-color: #ff3e66;
+   color: #fff;
+   font-size: 15px;
+   font-weight: 500;
+   width: 138px;
+   height: 47px;
+   line-height: 47px;
+   border: 1px solid #ff3e66;
+   border-radius: 1000px;
+   text-align: center;
+   transition: all 0.3s;
+}
+
+.arrows {
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   gap: 10px;
+   margin-top: 40px;
+}
+
+.custom-arrow {
+   font-size: 16px;
+   height: 50px;
+   width: 50px;
+   text-align: center;
+   line-height: 50px;
+   border: 2px solid #e3e5e8;
+   color: #e3e5e8;
+   border-radius: 50%;
+   z-index: 9;
+   cursor: pointer;
+   transition: all 0.3s;
+}
+
+.text-center {
+   text-align: center;
+}
+
+.text {
+   font-size: 14px;
+   font-weight: 500;
+   color: #505056;
+}
+
+.container {
+   max-width: 120rem;
+   padding: 0 3.2rem;
+   margin: 0 auto;
+}
+
+.primary-heading {
+   font-size: 7.4rem;
+   color: #0e1036;
+   letter-spacing: -0.5px;
+   font-weight: 100;
+   margin-bottom: 3.2rem;
+}
+
+.primary-discription {
+   font-size: 2rem;
+   color: #011d5e;
+   margin-bottom: 4.8rem;
+}
+
+.secondery-heading {
+   font-size: 4.4rem;
+   color: #131231;
+   margin-bottom: 2rem;
+   font-weight: 600;
+}
+
+.text-boot {
+   font-size: 1.8rem;
+   color: #777;
+   line-height: 1.5;
+}
+
+.grid {
+   display: grid;
+   gap: 3rem;
+}
+
+.grid--2-cols {
+   grid-template-columns: 1fr 1fr;
+}
+
+.grid--3-cols {
+   grid-template-columns: repeat(3, 1fr);
+   /* grid-template-rows: 1fr 1fr; */
+}
+
+/* CHANGING BACKGROUND-COLOR FOR ICONS */
+/* i used class and add it in icons */
+
+/* i prefere the code above */
+/* 
+.feature-box:nth-child(2) .feature-icon {
+ background-color: #e84e8a;
+ padding-top: 1.8rem;
+ padding-bottom: 1.8rem;
+}
+.feature-box:nth-child(3) .feature-icon {
+ background-color: #3678ff;
+ padding-top: 2rem;
+ padding-bottom: 2rem;
+}
+.feature-box:nth-child(4) .feature-icon {
+ background-color: #fa7741;
+}
+.feature-box:nth-child(5) .feature-icon {
+ background-color: #698afb;
+}
+.feature-box:nth-child(6) .feature-icon {
+ background-color: #3bb095;
+} */

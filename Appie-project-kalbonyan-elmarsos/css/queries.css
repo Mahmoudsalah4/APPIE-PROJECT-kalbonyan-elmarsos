@@ -1,0 +1,620 @@
+/****************************************/
+/* Container */
+/****************************************/
+.container {
+   margin-left: auto;
+   margin-right: auto;
+   padding-left: 15px;
+   padding-right: 15px;
+}
+
+@media (min-width: 576px) {
+   .container {
+      width: 540px;
+   }
+}
+
+@media (min-width: 768px) {
+   .container {
+      width: 720px;
+   }
+}
+/* Small */
+
+/* Medium */
+@media (min-width: 992px) {
+   .container {
+      width: 960px;
+   }
+}
+/* Medium */
+
+/* Large */
+@media (min-width: 1200px) {
+   .container {
+      width: 1200px;
+   }
+}
+/* Large */
+
+/**************************************/
+/* BELOW 1200px (Landscape Tablets) */
+/*************************************/
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+   .hero-img-container {
+      position: absolute;
+      width: 60%;
+   }
+}
+
+/**************************************/
+/* BELOW 1200px (Tablets) */
+/*************************************/
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+   .section-hero {
+      padding: 190px 0 120px;
+   }
+
+   .primary-heading {
+      font-size: 50px;
+   }
+
+   .hero-text-box {
+      width: 400px;
+   }
+
+   .features-boxes {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      justify-items: center;
+      align-items: center;
+      gap: 40px;
+   }
+
+   .feature-box {
+      padding: 30px;
+   }
+
+   .marketing-img {
+      position: absolute;
+      left: 5%;
+      top: 5px;
+      max-width: 415px;
+   }
+
+   .market-plan {
+      width: 175px;
+   }
+
+   .market-plan:first-of-type {
+      margin-right: 30px;
+   }
+
+   .market-plan-title {
+      font-size: 16px;
+   }
+
+   .market-plan .sub-heading {
+      width: 130px;
+   }
+
+   .services-container {
+      flex-wrap: nowrap;
+      gap: 20px;
+   }
+
+   .secondary-heading,
+   .second-head {
+      font-size: 36px;
+   }
+
+   .statistics-container {
+      grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+   }
+
+   .statistic-box {
+      padding: 20px 30px;
+   }
+
+   .statistic-box .numbers {
+      font-size: 40px;
+   }
+
+   .media-container {
+      display: flex;
+      justify-content: space-between;
+   }
+
+   .video-text {
+      padding: 30px 0 0 70px;
+   }
+
+   .video-img {
+      width: 100%;
+   }
+
+   .small-video-img {
+      width: 100%;
+      height: 97%;
+   }
+
+   .video-text h4 {
+      font-size: 30px;
+   }
+
+   .pricing-cards {
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+   }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+   .section-hero {
+      padding: 190px 0 120px;
+   }
+
+   .primary-heading {
+      font-size: 50px;
+      line-height: 1.4;
+   }
+
+   .hero-text-box {
+      width: 690px;
+   }
+
+   .heading-input {
+      width: 60%;
+   }
+
+   .hero-img-container {
+      width: 40%;
+   }
+
+   .marketing-text .secondary-heading {
+      font-size: 44px;
+      width: 500px;
+      line-height: 1.3;
+   }
+}
+
+/***************************/
+/* BELOW 944px (Tablets) */
+/**************************/
+
+@media (max-width: 944px) {
+   .secondary-heading {
+      font-size: 36px;
+   }
+
+   .sub-heading {
+      font-size: 16px;
+   }
+
+   .main-nav-box {
+      display: flex;
+      align-items: center;
+   }
+
+   .appie-logo {
+      width: 60%;
+   }
+
+   .get-started {
+      display: flex;
+      justify-content: flex-end;
+      width: 40%;
+      margin-right: 15px;
+   }
+
+   .menu-toggle-btn {
+      position: static;
+   }
+
+   .burger-menu {
+      display: inline-flex;
+      justify-content: flex-end;
+      position: relative;
+      z-index: 10000;
+   }
+
+   #nav-check:checked ~ .main-navbar {
+      display: block;
+      transition: all 0.5s;
+   }
+
+   .main-navbar {
+      display: none;
+   }
+
+   .main-nav {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+   }
+
+   .nav-link-item {
+      padding: 1rem 0;
+      margin: 0;
+   }
+
+   .nav-link-item:last-child {
+      border-bottom: none;
+   }
+
+   .marketing {
+      padding: 30px;
+      flex-direction: column;
+      justify-content: center;
+   }
+
+   .marketing-title .secondary-heading {
+      font-size: 44px;
+      font-weight: 900;
+      line-height: 1.3;
+   }
+
+   .marketing-img {
+      position: sticky;
+      width: 100%;
+      margin-bottom: 80px;
+   }
+
+   .marketing-text {
+      width: 100%;
+   }
+
+   .services-title .secondary-heading {
+      line-height: 1.3;
+   }
+
+   .media-container {
+      flex-direction: column;
+   }
+
+   .service-text-box {
+      width: 100%;
+   }
+
+   .video-text {
+      padding: 30px 0 30px 0;
+   }
+
+   .video-img,
+   .small-video-img {
+      width: 100%;
+   }
+
+   .arrows {
+      display: none;
+   }
+
+   .statistics-container {
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+   }
+
+   .statistic-box {
+      width: 100%;
+   }
+
+   .pricing-card:last-child {
+      margin-top: 0;
+      grid-column: 1 / -1;
+      width: 320px;
+   }
+
+   .testimonials .container {
+      padding: 50px 30px;
+   }
+
+   .testimonials-container {
+      text-align: center;
+      flex-direction: column;
+   }
+
+   .person-text p {
+      font-size: 20px;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 85%;
+   }
+
+   .support-container-img {
+      height: 12rem;
+      width: 12rem;
+   }
+
+   .support-box:last-child {
+      gap: 0;
+   }
+
+   .footer-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      justify-items: start;
+      gap: 40px;
+   }
+
+   .footer-copyright {
+      justify-content: center;
+      flex-wrap: wrap;
+   }
+
+   .footer .apps-container {
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 40px;
+   }
+
+   .footer-copyright .apps-container .ios,
+   .footer-copyright .apps-container .android {
+      margin-bottom: 20px;
+   }
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 930px) {
+   .support-container-img {
+      height: 16rem;
+      width: 16rem;
+   }
+}
+
+/**************************************/
+/* BELOW 767px (phones) */
+/*************************************/
+@media (max-width: 767px) {
+   html {
+      /* 8px / 16px = 0.5 = 50% */
+      font-size: 45%;
+   }
+
+   .secondary-heading {
+      font-size: 26px;
+      text-align: center;
+   }
+
+   .section-hero {
+      padding: 150px 0 150px;
+   }
+
+   .primary-heading {
+      font-size: 30px;
+      line-height: 1.4;
+   }
+
+   .hero-text-box {
+      width: calc(100vw - 30px);
+   }
+
+   .heading-input {
+      width: 100%;
+   }
+
+   .hero-img-container {
+      width: 36%;
+   }
+
+   .service-title {
+      font-size: 20px;
+   }
+
+   .sub-heading-container {
+      text-align: center;
+      justify-content: center;
+   }
+
+   .feature-box {
+      text-align: center;
+   }
+
+   .marketing-img-container {
+      display: none;
+   }
+
+   .marketing-title .secondary-heading {
+      font-size: 30px;
+      font-weight: 900;
+      line-height: 1.3;
+   }
+
+   .market-plan-title {
+      margin: 0;
+   }
+
+   .market-plans {
+      flex-direction: column;
+      padding: 0;
+      margin: 0;
+      margin-top: 30px;
+      gap: 30px;
+   }
+
+   .market-plans .sub-heading {
+      font-size: 15px;
+      line-height: 1.5;
+      max-width: 350px;
+      padding-left: 30px;
+   }
+
+   .market-plans {
+      padding: 0;
+   }
+
+   .marketing-title {
+      text-align: center;
+   }
+
+   .market-plan-title {
+      margin: 0;
+   }
+
+   .market-plan {
+      width: 100%;
+      text-align: left;
+   }
+
+   .apps-section {
+      padding-bottom: 70px;
+      padding-top: 70px;
+      margin-bottom: 90px;
+      background-color: #eef1f6;
+   }
+
+   .pricing-card:last-child {
+      margin-top: 0;
+      grid-column: 1 / -1;
+      width: 100%;
+   }
+
+   .check-icon {
+      top: 0;
+      right: 0;
+   }
+
+   .person-text p {
+      font-size: 16px;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 91%;
+   }
+
+   .page-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+   }
+
+   .footer-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      justify-items: center;
+      gap: 40px;
+      text-align: center;
+   }
+
+   .footer-container .footer-touch ul li {
+      justify-content: center;
+   }
+
+   .footer-support {
+      margin-right: 0;
+   }
+
+   .go-up {
+      right: 5px;
+      bottom: 5px;
+   }
+}
+
+/**************************************/
+/* Galaxy fold 280px (phones) */
+/*************************************/
+@media (max-width: 280px) {
+   .primary-heading {
+      font-size: 20px;
+      line-height: 1.4;
+   }
+
+   .secondary-heading {
+      font-size: 24px !important;
+   }
+
+   .sub-heading {
+      font-size: 13px !important;
+   }
+
+   .hero-text-box .sub-heading {
+      font-size: 14px;
+   }
+
+   .input-email {
+      border: none;
+      outline: none;
+      width: 55%;
+      font-size: 16px;
+   }
+
+   .hero-feedback {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+
+   .features-boxes {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+   }
+
+   .feature-box {
+      border: 1px solid #eef0f4;
+      padding: 10px;
+      border-radius: 10px;
+      transition: all 0.3s ease-out 0s;
+   }
+
+   .marketing {
+      padding: 20px;
+      flex-direction: column;
+      justify-content: center;
+   }
+
+   .market-plan-title {
+      font-size: 17px;
+   }
+
+   .service-title {
+      font-size: 16px;
+   }
+
+   .statistics-container {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      justify-content: center;
+   }
+
+   .video-text h4 {
+      font-size: 20px;
+   }
+
+   .apps-section {
+      padding-bottom: 70px;
+      padding-top: 70px;
+      margin-bottom: 90px;
+      background-color: #eef1f6;
+   }
+
+   .pricing-cards {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+   }
+
+   .pricing-card {
+      padding: 10px;
+      width: 100%;
+   }
+
+   .support-container-img {
+      height: 12rem;
+      width: 12rem;
+   }
+
+   .get-started-link:link,
+   .get-started-link:visited {
+      font-size: 13px;
+   }
+
+   .footer-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      justify-items: center;
+      gap: 40px;
+      text-align: center;
+   }
+}
